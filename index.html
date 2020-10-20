@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./src/style/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News Website</title>
+    <title>Eagle.mn</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="wrapper">
         <div class="navbar">
           <div class="navbar__logo">
-            <p>Eagle.mn</p>
+            <figure>
+              <img src="./src/img/philadelphia-eagles-1.svg" alt="Eagle logo" />
+            </figure>
           </div>
           <div class="navbar__menu">
             <ul>
@@ -20,26 +23,38 @@
               <li><a href="#">Сонин хачин</a></li>
             </ul>
           </div>
-          <div class="navbar__logo">
+          <div class="navbar__search">
             <input type="text" class="seach" placeholder="Хайлт хийх" />
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <section>
+      <section class="wrapper">
         <div class="container latest-post">
           <div class="latest-post__left">
             <div class="latest-post__left__full-block">
               <figure>
-                <img src="#" alt="img" />
+                <img src="./src/img/post_1.jpg" alt="img" />
               </figure>
             </div>
             <div class="latest-post__left__mini-post">
               <div class="latest-post__left__mini-posts">
-                <figure>
-                  <img src="#" alt="" />
-                </figure>
+                <figure></figure>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsam, sequi.
+                </p>
+              </div>
+              <div class="latest-post__left__mini-posts">
+                <figure></figure>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsam, sequi.
+                </p>
+              </div>
+              <div class="latest-post__left__mini-posts">
+                <figure></figure>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Ipsam, sequi.
@@ -50,28 +65,28 @@
           <div class="latest-post__mid">
             <div class="latest-post__mid__fluid">
               <figure>
-                <img src="#" alt="" />
+                <img src="./src/img/post_1.jpg" alt="img" />
               </figure>
               <h1>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
                 rem?
               </h1>
             </div>
-            <div class="latest-post__mid__column">
-              <figure>
-                <img src="#" alt="" />
-              </figure>
-            </div>
-            <div class="latest-post__mid__column">
-              <figure>
-                <img src="#" alt="" />
-              </figure>
+            <div class="latest-post__mid__bottom">
+              <div class="latest-post__mid__column">
+                <figure>
+                  <img src="./src/img/post_2.jpg" alt="img" />
+                </figure>
+              </div>
+              <div class="latest-post__mid__column">
+                <figure>
+                  <img src="./src/img/post_2.jpg" alt="img" />
+                </figure>
+              </div>
             </div>
           </div>
           <div class="latest-post__right">
-            <figure class="banner--top">
-              <img src="#" alt="" />
-            </figure>
+            <figure class="banner--top"></figure>
             <div class="latest-post__right__full-block">
               <figure>
                 <img src="#" alt="img" />
