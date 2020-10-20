@@ -107,10 +107,12 @@ figure {
 }
 .latest-post__left__full-block figure img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 .latest-post__left__mini-post {
-  margin-top: 15px;
+  width: 100%;
+  height: 49%;
   border: 1px #363636 solid;
   border-radius: 15px;
 }
@@ -176,6 +178,8 @@ figure {
 }
 .latest-post__mid__fluid figure img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .latest-post__mid__bottom {
   display: flex;
@@ -267,6 +271,7 @@ figure {
   background-color: #363636;
   background: url("../img/jackieChan.jpg") fixed;
   background-size: cover;
+  background-position: center;
 }
 .recommended-post__content {
   width: 100%;
@@ -330,7 +335,8 @@ footer {
   color: white;
   padding-top: 2%;
 }
-.footer__address, .mapouter {
+.footer__address,
+.mapouter {
   width: 31%;
   height: 100%;
 }
@@ -346,11 +352,121 @@ footer {
 }
 .footer__contact {
   width: 31%;
-  height: 100%;0;
+  height: 100%;
 }
 .footer__contact__list ul {
   list-style: none;
   font-size: 0.8rem;
   line-height: 20px;
   padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar__menu,
+  .navbar__search {
+    display: none;
+  }
+  .navbar__logo {
+    width: 100%;
+  }
+  .latest-post {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .latest-post__left {
+    width: 100%;
+    height: auto;
+  }
+  .latest-post__left__mini-post {
+    display: none;
+  }
+
+  .latest-post__mid {
+    width: 100%;
+  }
+  .latest-post__right {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .popular-post__posts {
+    width: 49%;
+    margin-top: 10px;
+  }
+  .popular-post {
+    height: auto;
+  }
+  .container {
+    height: 100vh;
+  }
+  .recommended-post__content {
+    padding-left: 15px;
+  }
+  .recommended-post__content h1 {
+    font-size: 1.3rem;
+  }
+  .recommended-post__content p {
+    margin-top: 15px;
+
+    font-size: 0.8rem;
+  }
+  .recommended-post__content input {
+    margin-top: 15px;
+  }
+  .random-post {
+    margin-top: 40px;
+    height: auto;
+  }
+  .random-post__content {
+    flex-wrap: wrap;
+  }
+  .random-post__item {
+    width: 49%;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 2%;
+    flex-wrap: wrap;
+  }
+  .footer__address,
+  .mapouter {
+    width: 100%;
+    height: 100%;
+  }
+  .footer__address,
+  .footer__contact {
+    padding: 15px;
+  }
+  .footer__address h1,
+  .footer__contact h1 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+  }
+  .footer__address p {
+    font-size: 0.8rem;
+    line-height: 20px;
+    text-align: justify;
+  }
+  .footer__contact {
+    width: 100%;
+    height: 100%;
+  }
+  .footer__contact__list ul {
+    list-style: none;
+    font-size: 0.8rem;
+    line-height: 20px;
+    padding: 0;
+  }
+  .mapouter {
+    padding: 30px 0;
+    margin: auto;
+  }
 }
