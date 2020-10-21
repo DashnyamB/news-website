@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./src/style/style.css" />
+    <script src="./src/cat.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eagle.mn</title>
@@ -23,6 +25,16 @@
               <li><a href="#">Сонин хачин</a></li>
             </ul>
           </div>
+          <!-- mobile menu -->
+          <div id="mmenu" class="menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <a href="#">Нийгэм</a>
+            <a href="#">Эдийн Засаг</a>
+            <a href="#">Улс төр</a>
+            <a href="#">Сонин хачин</a>
+          </div>
+          <button class="openbtn" onclick="openNav()">&#9776;</button>
+          <!-- mobile menu end -->
           <div class="navbar__search">
             <input type="text" class="seach" placeholder="Хайлт хийх" />
           </div>
