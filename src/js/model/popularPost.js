@@ -17,13 +17,16 @@ export default class PopularPost {
   }
 
   async getPost() {
+    let posts = [];
     try {
-      let a = await axios.get("/popularPost.json").then((res) => {});
+      await axios.get("/popularPost.json").then((res) => {
+        posts = Object.entries(res.data).reverse();
+      });
+      //   console.log(posts);
+      return posts;
     } catch (err) {
       console.log("Өгөгдөл татахад алдаа гарлаа");
     }
-
-    // console.log("====> ", a.data);
   }
 }
 
