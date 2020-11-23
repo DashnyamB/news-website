@@ -10,16 +10,18 @@ let posts = [];
 
 // post nemeh event listener tur haasan bga
 
-// (function () {
-//   if (window.location.href.indexOf("admin.html")) {
-//     const btnClick = () => {
-//       elements.postbtn.addEventListener("click", () => {
-//         postPost.newPost(elements.postTitle.value, elements.postPhoto.value);
-//       });
-//     };
-//     btnClick();
-//   }
-// })();
+(function () {
+  if (window.location.href.indexOf("admin") > 0) {
+    const btnClick = () => {
+      elements.postbtn.addEventListener("click", () => {
+        postPost.newPost(elements.postTitle.value, elements.postPhoto.value);
+      });
+    };
+    btnClick();
+  }
+})();
+
+console.log(window.location.href);
 
 postPost.getPost().then((e) => {
   posts = e;

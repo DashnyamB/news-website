@@ -11,7 +11,7 @@ export default class PopularPost {
     if (postInfo.title !== "" && postInfo.URL !== "") {
       axios
         .post("/popularPost.json", postInfo)
-        .then((response) => console.log("Saved"))
+        .then((response) => alert("Амжилттай нэмэгдлээ"))
         .catch((err) => console.log(err));
     }
   }

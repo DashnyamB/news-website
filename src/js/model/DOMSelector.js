@@ -3,4 +3,5 @@ export const DOMElements = {
   postTitle: document.querySelector(".create-post__title"),
   postPhoto: document.querySelector(".create-post__photo"),
   popularPostContainer: document.getElementById("popular-post-container"),
+  adminPanel: document.getElementById("adminPanel"),
 };
