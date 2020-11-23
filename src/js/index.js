@@ -11,7 +11,11 @@ let posts = [];
 // post nemeh event listener tur haasan bga
 
 (function () {
-  if (window.location.href.indexOf("admin") > 0) {
+  if (
+    window.location.href.indexOf("admin") > 0 ||
+    window.location.href ===
+      "https://dashnyamb.github.io/news-website/admin.html"
+  ) {
     const btnClick = () => {
       elements.postbtn.addEventListener("click", () => {
         postPost.newPost(elements.postTitle.value, elements.postPhoto.value);
